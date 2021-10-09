@@ -6,9 +6,7 @@ It is addressed to programming students who are new to problem solving or experi
 
 This process is created by Nayib Abdala after trying different approaches and studying from several years the best ways to learn how to solve problems.
 
-| PACER process.
-
-PACER - Problem Algorithm Code Execution Refactor - 
+**PACER** - Problem Algorithm Code Execution Refactor - 
 
 ## Problem
 - Define the problem in your own words
