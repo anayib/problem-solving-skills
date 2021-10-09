@@ -8,13 +8,12 @@ This process is created by Nayib Abdala after trying different approaches and st
 
 | PACER process.
 
-It could be called PACE - Problem Algorithm Code Execution - if we include examples and data structures into problem understanding
-## Problem
+PACER - Problem Algorithm Code Execution Refactor - 
+# Problem
 - Define the problem in your own words
-- Identify expected **input** and **output**
+- Identify expected **input** and **output**. Also define the data structure to transform the input into the output. 
 - Make the **requirements** explicit
 - Identify **rules**
-- Mental model of the problem (optional)
 
   ## Examples
   - Analise some examples/test cases
