@@ -2,11 +2,11 @@
 
 This repo aims to explain a clear process for algorithm problem solving.
 
-It is address to programming students who are new to problem solving or experienced software developers who want to strengthen their problem solving skills following a clear and effective process.
+It is addressed to programming students who are new to problem solving or experienced software developers who want to strengthen their problem solving skills following a clear and effective process.
 
 This process is created by Nayib Abdala after trying different approaches and studying from several years the best ways to learn how to solve problems.
 
-| PEDACER process.
+| PACER process.
 
 It could be called PACE - Problem Algorithm Code Execution - if we include examples and data structures into problem understanding
 ## Problem
