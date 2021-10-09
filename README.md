@@ -9,19 +9,23 @@ This process is created by Nayib Abdala after trying different approaches and st
 | PACER process.
 
 PACER - Problem Algorithm Code Execution Refactor - 
-# Problem
+
+## Problem
 - Define the problem in your own words
 - Identify expected **input** and **output**. Also define the data structure to transform the input into the output. 
 - Make the **requirements** explicit
 - Identify **rules**
 
-  ## Examples
+  ### Examples
   - Analise some examples/test cases
   - Analise the potential edge cases
 
-  ## Data Structure
+  ### Data Structure
   - Define the **input data** and the expected **output data** (outcome)
   - How we **represent data** that we will work with when **converting the input to output**.
+  
+  ### Rules
+  - Understand the restrictions and requirements of the problem. 
 
 ## Algorithm
 - Describe the step by step to transform the input into the output in any case you have been given to test
