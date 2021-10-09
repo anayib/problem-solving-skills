@@ -38,4 +38,7 @@ Execute the algorithm to test it.
 ## Refactor
 Refactor the code to improve its performance.
 
+## License
+This repo is available under the [MIT license](https://opensource.org/licenses/MIT). It also includes external exercises that are available under a variety of licenses. See LICENSE for the full license text.
+
 
