@@ -27,7 +27,7 @@ Example 5:
 Input: s = "{[]}"
 Output: true
 
-PEDACER process:
+PACER process:
 
 PROBLEM
 If a string pass as a parameter contains open brackets of the same type opened and closed in the correct order, return true, toherwise retur false.

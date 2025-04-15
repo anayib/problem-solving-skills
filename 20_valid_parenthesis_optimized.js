@@ -27,7 +27,7 @@ Example 5:
 Input: s = "{[]}"
 Output: true
 
-PEDACER process:
+PACER process:
 
 ALGORITHM
 
