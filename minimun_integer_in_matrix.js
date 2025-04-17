@@ -1,3 +1,52 @@
+// Solution 3:
+// - Map how many times appears each number of the first array in all of the arrays
+//   Initialize a numbersCounter Map
+//   Set every element from firstArray as a key to numbersCounter and their value to 0
+//   iterate over the matrix array
+//     for each sub-array check if each element matix[i][j] appears in Map -> numbersCounter.has(matrix[i][j]). This could be implemented with nested for loops or one for loop and forEach build in function.
+//     if the current element appears in Map numbersCounter, add one to the value of the corresponding key
+// - Create an array uniqueNumbers with the numbers that appears exactly matrix.length times
+//   Iterate over numbersCounter map and check the values that equals matrix.length . If the previous condition is fulfilled add the corresponding key to the uniqueNumbers array. 
+// - Return the minimum number from the previous array. You can use Math.min(...uniqueNumbers)
+
+
+function minimumInteger(matrix) {
+  if(matrix.length === 0 || matrix.some(arr => arr.length === 0)) { 
+     return -1;
+  };
+  
+  let firstArray = matrix[0];
+  let numbersCounter = new Map();
+  let uniqueNumbers = [];
+  firstArray.forEach(num => numbersCounter.set(num, 0));
+  
+  for(let i = 0; i < matrix.length; i++) {
+    for(let j = 0; j < matrix[i].length; j++) {
+      if(numbersCounter.has(matrix[i][j])) {
+        numbersCounter.set(matrix[i][j], (numbersCounter.get(matrix[i][j]) || 0) + 1);
+      };
+    };  
+  };
+  
+  numbersCounter.forEach((value, key) => {
+    if(value === matrix.length) uniqueNumbers.push(key);
+  }); 
+
+  return uniqueNumbers.length > 0 ? Math.min(...uniqueNumbers) : -1;
+};
+
+// test
+console.log(minimumInteger([[1, 2, 3], [4, 5, 6], [7, 8, 9]])); // -1
+console.log(minimumInteger([[1, 2, 3, 5, 8], [2, 5, 7, 8], [1, 3, 5, 7, 9]])); // 5
+console.log(minimumInteger([[2, 4, 6, 8], [1, 2, 3, 4, 5, 6], [2, 6, 10]])); // 2 
+console.log(minimumInteger([[1, 2, 3], [4, 5, 6], [7, 8, 9]])); // -1
+console.log(minimumInteger([[1, 1, 2, 3], [1, 2, 3], [1, 3, 4, 5]])); // 3  
+console.log(minimumInteger([[]])); // -1
+console.log(minimumInteger([[5], [5], [5, 6, 7]])); // 5
+console.log(minimumInteger([[], [], []])); // -1
+
+
+/*
 function minimumInteger(matrix) {
    if (matrix.length === 0 || matrix.some(row => row.length === 0)) {
     return -1;
@@ -37,7 +86,7 @@ console.log(minimumInteger([[]])); // -1
 console.log(minimumInteger([[5], [5], [5, 6, 7]])); // 5
 console.log(minimumInteger([[], [], []])); // -1
 
-/*
+
 
 Problem: find the smallest integer that appears in all inner arrays. 
 Input: two dimensional array of positive integers
