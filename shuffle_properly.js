@@ -7,10 +7,10 @@ function isShuffleWell(arr) {
   return true;
 }
 
-console.log(isShuffleWell([1, 2, 3, 5, 8, 6, 9, 10, 7, 4]))
-console.log(isShuffleWell([3, 5, 1, 9, 8, 7, 6, 4, 2, 10]))
-console.log(isShuffleWell([1, 5, 3, 8, 10, 2, 7, 6, 4, 9]))
-console.log(isShuffleWell([1, 3, 5, 7, 9, 2, 4, 6, 8, 10]))
+console.log(isShuffleWell([1, 2, 3, 5, 8, 6, 9, 10, 7, 4])) // false 
+console.log(isShuffleWell([3, 5, 1, 9, 8, 7, 6, 4, 2, 10])) // false
+console.log(isShuffleWell([1, 5, 3, 8, 10, 2, 7, 6, 4, 9])) // true
+console.log(isShuffleWell([1, 3, 5, 7, 9, 2, 4, 6, 8, 10])) // true
 
 /*
 Problem: check if the array has at least 3 consecutive ascending or descending numbers.
@@ -28,7 +28,7 @@ Algorithm:
 7 Return true
 
 
-Problem Description:
+Problem Description:Given an array of 10 numbers, return whether or not the array is shuffled sufficiently enough. In this case, if 3 or more numbers appear consecutively (ascending or descending), return false.
 Given an array of 10 numbers, return whether or not the array is shuffled sufficiently enough. In this case, if 3 or more numbers appear consecutively (ascending or descending), return false.
 
 Examples
